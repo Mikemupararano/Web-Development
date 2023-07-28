@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.3.0/chart.min.js" integrity="sha512-mlz/Fs1VtBou2TrUkGzX4VoGvybkD9nkeXWJm3rle0DPHssYYx4j+8kIS15T78ttGfmOjH0lLaBXGcShaVkdkg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    
+    <title>Using Chart JS to draw graphs</title>
+    <style>
+        #myCanvas {
+            display: flex;
+            position: relative;
+            left: 35%;
+            top: 100px;
+            background-color: white;
+            border: 1px solid red;
+            
+          }
+          h1 {
+            background-color: #008000;
+            text-align: center;
+            font-size: 80px;
+            color: white;
+            padding: 20px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            border-radius: 60px;
+                      }
+          body {
+            width: 1000px;
+            margin: auto;
+            margin-top: 50px;
+            background: #26C6DA;
+          }
+    </style>
+</head>
+<body>
+<h1>Who deserves a cookie?</h1>
+<canvas id="myCanvas" width="400" height="400"></canvas>
+   <script>
+   
+const canvasElement = document.getElementById("myCanvas");
+ctx.myCanvas=
+const config ={
+    type: "bar",
+    data: {
+        labels: ["Mike", "Stebha", "Alfred", "Francisca", "Cosmas"], 
+        datasets: [{label: "Number of cookies", data: [5,2,12,19,3]}]
+    },
+}
+
+
+const myCanvas= new Chart (canvasElement, config);
+
+   </script> 
+</body>
+</html>

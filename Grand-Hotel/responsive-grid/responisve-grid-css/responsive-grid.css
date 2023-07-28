@@ -1,0 +1,191 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: font-family: 'Actor', sans-serif;;
+}
+.heading {
+    color: azure;
+    font-family: 'Actor', sans-serif;
+    font-size: 60px;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 16px;
+    width: 100vw;
+    position: fixed;
+}
+.logo {
+    display: flex;
+    position: relative;
+    left: 0px;
+    justify-content: center;
+    margin-top: 20px;
+    background-color: #00008b;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    
+
+}
+/*creating a div-wrapper for the logo */
+.logo-design {
+    display: flex;
+height: 120px;
+width: 120px;
+border: 4px dotted #008b8b;
+position: relative;
+left: 700px;
+border-radius: 20px  20px 0px 0px;
+}
+
+
+
+.inner-design {
+    height: 100px;
+    width: 100px;
+    border: 2px dashed #008b8b;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+.inner-design {
+    position: relative;
+}
+.icon {
+  border: 2px solid #008b8b;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  top: 17px;
+  left: 8px;
+
+}
+
+.fa-users-between-lines {
+    position: absolute;
+    color: #008b8b;
+    height: 50px;
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+}
+.fa-users-between-lines:hover {
+    color:#00d0d5;
+}
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    height: 900px;
+    width: 180px;
+    background:#7b4aba;
+    justify-content: space-around;
+    position: fixed;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 0px;
+    }
+.sidebar {
+    
+    font-size: 50px;
+
+}
+.sidebar:hover {
+    cursor: pointer;
+}
+.fa-facebook {
+    position: absolute;
+    color: blue;
+    left: 50%;
+    margin-top: 0px;
+}
+.fa-facebook:hover {
+    color: aqua;
+}
+.fa-instagram {
+    color: red;
+    position: absolute;
+    height: 70px;
+    left: 50%;
+}
+.fa-instagram:hover {
+    color: aquamarine;
+}
+
+.fa-youtube {
+    color: red;
+    position: absolute;
+    left: 50%;
+    }
+    .fa-youtube:hover {
+        color: aquamarine;
+    }
+.fa-twitter {
+    color: #00a2ed;
+    position: absolute;
+    left: 50%;
+}
+.fa-twitter:hover {
+    color: aquamarine;
+}
+.fa-whatsapp {
+    color: #25D366;
+    position: absolute;
+    left: 50%;
+}
+.fa-whatsapp:hover {
+    color: #FA4779;
+}
+.suzanna {
+    height: 800px;
+    width: 490px;
+    position: relative;
+    left: 200px;
+}
+.suzanna:hover {
+    border:2px solid  aquamarine;
+    cursor: pointer;
+}
+.suzana-2 {
+    height: 800px;
+    width: 520px;
+    position: relative;
+    left: 200px;
+}
+.suzana-2:hover {
+    border:2px solid  aquamarine;
+    cursor: pointer;
+}
+.navigation {
+    display: flex;
+    flex-direction: column;
+    background-color:#7b4aba;
+    position: relative;
+    width: 400px;
+    height: 800px;
+    left: 1220px;
+    bottom: 805px;
+    text-align: left;
+    justify-content: space-between;
+    letter-spacing: 0.2px;
+    
+    }
+    .navigation:hover {
+        border: 2px solid #38ffff;
+        cursor: pointer;
+    }
+li {
+    list-style: none;
+    text-align: start;
+    font-family: 'Actor', sans-serif;
+    font-size: 20px;
+   color: azure;
+     
+} 
+.navibar:hover{
+    color: aquamarine;
+    cursor: pointer;
+}

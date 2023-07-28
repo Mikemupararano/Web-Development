@@ -1,0 +1,88 @@
+body{background-color: rgb(3, 252, 207);
+font-size: 16px;
+color: rgb(252, 3, 32);
+font-family: Arial, Helvtica, sans-serif;
+font-weight: normal;
+line-height: 1.6em;
+margin: 0;
+
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+
+}
+.container{
+	width: 80%;
+	margin: auto;
+}
+
+.my-form input [type="submit"] {
+	background-color: #333;
+	color: #fff;
+	padding: 10px 15px;
+	border: none;
+}
+a:hoover{
+	color: red;
+
+}
+
+a: active{
+	color: green;
+}
+a: visted{
+	color: yellow;
+}
+
+.box-1{
+	background-color: #26A69A;
+	color: #FFFFFF;
+	border: 2px red solid;
+
+}
+.box-2{
+	background-color: #7CB342;
+	color:#FFFFFF ;
+	border: 2px red solid;
+	/* Padding */
+	padding: 20px;
+}
+
+.box-3{
+	ackground-color: #7CB342;
+	color:#FFFFFF ;
+	border: 2px red solid;
+	/*Padding */
+	padding: 20px;
+	margin: 20px 0;
+
+
+}
+.categories ul{
+	background-color: black;
+	color: white;
+	list-style: square;
+	list-style: none;
+
+}
+.categories li {
+	padding-bottom: 6px;
+	border-bottom: dotted  1px #333;
+
+}
+.my-form{
+	padding: 20px;
+
+}
+.my-form.form-group{
+	padding-bottom: 15px;
+}
+.my-form label {
+	display: block;
+}
+.my-form input [type="text"], .my-form textarea {
+	padding: 8px;
+	width: 100%;
+}

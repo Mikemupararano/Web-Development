@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding Emojis</title>
+    <style>
+h1 {
+    background-color: blue;
+    font-size: 70px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: none;
+    color: aqua;
+}
+
+#welcome-el {
+    animation-name: mymove;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    position: relative;
+    animation-timing-function: linear infinite;
+   
+}
+@keyframes mymove {
+    from {
+        left:-500px;}
+    to {
+        left: 1600px;
+    }
+}
+    </style>
+</head>
+<body>
+<h1 id="welcome-el"></h1>
+    <script>
+let name= "Madhara Mupararano";
+let greeting= document.getElementById("welcome-el");
+greeting.innerHTML= name +",  " + "welcome to England!" +" ✋";
+    </script>
+</body>
+</html>

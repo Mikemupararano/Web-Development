@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning JavaScript</title>
+    <style>
+       
+        h1 {
+            color: aqua;
+            background-color: black;
+            font-family: Arial;
+            font-size: 100px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+        p {
+            color: aqua;
+            background-color: black;
+            font-family: Arial;
+            font-size: 50px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            text-align: left;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 id="title1">
+        Learning JavaScript Arrays
+    </h1>
+    <p id="demo"></p>
+
+   <script>
+    /*const d= new Date();
+    console.log(d)
+    let year=d.getFullYear();
+    console.log(year);
+    console.log(d.setFullYear(2020));*/
+    //Arrays
+    
+    /*const cars=["Saab",
+     "Volvo", 
+     "BMW"];
+    console.log(cars);
+    console.log(document.getElementById('demo').innerHTML=cars);*/
+     //Creating an array and providing the items to the array
+     const vehicles =[];
+     vehicles[0]= 'Zafira';
+     vehicles[1]='Mazda';
+     vehicles[2]='BMW';
+     console.log(vehicles);
+     document.getElementById('demo').innerHTML=vehicles;
+     console.log(vehicles[0]);
+    for (i=1; i<=vehicles.length; i++) {
+console.log(i);
+console.log(vehicles[i]);
+     }
+     const newString=document.getElementById('demo').innerHTML=vehicles.toString();
+     console.log(newString);
+     /*const new Array ("D4D", "Hyundai", "Suzuki");
+     document.getElementById('demo').innerHTML=new Array;*/
+     </script>
+</body>
+</html>

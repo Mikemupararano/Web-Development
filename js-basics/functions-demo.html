@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions Demo</title>
+    <style>
+        . {
+            box-sizing: border-box;
+            margin:0;
+            padding: 0;
+        }
+        .loop-header {
+            background-color: orangered;
+            color: aqua;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 80px;
+            font-weight: bold;
+            text-align: center;
+            border-radius: 10px;
+            padding: 20px;
+        }
+    </style>
+    
+</head>
+<body>
+    <h1 class="loop-header">Understanding Functions in JavaScript</h1>
+    <p id="demo"></p>  
+   <script>
+        function my_Function(val) {
+document.getElementById("demo").innerHTML=val*val;
+       }
+        my_Function(5);
+            </script>  
+            <script>
+                let hisFunction=function(a,b) {
+                    return a + b
+                };
+                document.getElementById("demo").innerHTML=hisFunction (8,7);
+            </script>
+            <script>
+                let herFunction=function() {
+                    alert("Hello, Genius! The date is" + "   " + new Date());
+
+                }
+                document.getElementById("demo").innerHTML=herFunction();
+            </script>
+            <script>
+                let theirFunction= new Function ("a","b", "return a + b");
+                
+             document.getElementById("demo").innerHTML=theirFunction(9,5);
+
+            </script>
+<script>
+    (function Total() {
+        alert("Mhike");
+        
+    })();
+</script>
+
+</body>
+</html>

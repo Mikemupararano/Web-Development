@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.3.0/dist/chart.umd.min.js"></script>
+    <title>Using JS to plot scatter graphs</title>
+<style>
+    *{
+        box-sizing: border-box;
+        margin:0;
+        padding: 0;
+        font-size: medium;
+
+    }
+    .loop-header {
+        background-color: black;
+        color: aqua;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 60px;
+        font-weight: bold;
+        text-align: center;
+        border-radius: 10px;
+        padding: 20px;
+    }
+    #myChart {
+        background-color: bisque;
+        border: 2px solid red;
+    }
+</style>
+</head>
+<body>
+    <h1 class="loop-header">A visual analysis of the summer 2023 GCSE results</h1>
+    <canvas id="myChart" style="width: 200, height: 300"></canvas>
+<script>
+  const bioResults =[
+  {x:1, y:1},
+  {x:2, y:1},
+  {x:3, y:3},
+  {x:4, y:14},
+  {x:5, y:15},
+  {x:6, y:30},
+  {x:7, y:10},
+  {x:8, y:7},
+  {x:9, y:4}
+    ];
+    const chmResults =[
+    {x:1, y:3},
+    {x:2, y:2},
+    {x:3, y:6},
+    {x:4, y:18},
+    {x:5, y:20},
+    {x:6, y:8},
+    {x:7, y:8},
+    {x:8, y:6},
+    {x:9, y:2}
+    ];
+
+    const phyResults =[
+    {x:1, y:1},
+    {x:2, y:0},
+    {x:3, y:1},
+    {x:4, y:10},
+    {x:5, y:13},
+    {x:6, y:12},
+    {x:7, y:15},
+    {x:8, y:6},
+    {x:9, y:3}
+    ];
+
+
+    myChart = new Chart ("myChart",{
+        type: "scatter",
+        data: { 
+            datasets: [{
+                label: "Summer 2023 GCSE Biology Results (%)",
+                radius: 10,
+                pointBackgroundColor: "green",
+                data: bioResults,
+                pointStyle: "triangle",
+                showLine:false,
+                lineTension: 0.9
+            },
+            {
+                label: "Summer 2023 GCSE Chemistry Results (%)",
+                radius: 10,
+                pointBackgroundColor: "red",
+                data: chmResults,
+                pointStyle: "rect",
+                showLine:false
+            },
+            {
+                label: "Summer 2023 GCSE Physics Results (%)",
+                radius: 10,
+                pointBackgroundColor: "blue",
+                data: phyResults,
+                pointStyle: "rectRounded",
+                showLine:false
+                
+            }
+           
+            ]
+}
+
+    });
+</script>
+</body>
+</html>

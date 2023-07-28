@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Getters & Accessors</title>
+    <style>
+        . {
+            box-sizing: border-box;
+            margin:0;
+            padding: 0;
+        }
+        .loop-header {
+            background-color: black;
+            color: aqua;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 80px;
+            font-weight: bold;
+            text-align: center;
+            border-radius: 10px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="loop-header">Understanding Object Getters and Accessors in JavaScript</h1>
+    <p id="demo"></p>  
+    <script>
+        let person = {
+            name: "Nyamadzaga",
+            surname: "Chipanzvi",
+            district: "Pfungwe",
+            age: 67,
+            get zita () {
+                return this.name +"  " + this.surname
+            }
+        }
+        document.getElementById("demo").innerHTML=person.zita;
+    </script> 
+    <script>
+        let car ={
+            model: "Mazda",
+            colour:"Blue",
+            fuel_type:"",
+            set fuel(fuel){
+                this.fuel_type=fuel
+            }
+
+        }
+        car.fuel="Petrol";
+        document.getElementById("demo").innerHTML=car.fuel_type;
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On Line/Off Line</title>
+    <style>
+        * {
+            background-color: #dbe3ab;
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+        }
+#header-title {
+    background-color: #6b898e;
+    font-size: 80px;
+    color: bisque;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    margin: none;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+    </style>
+
+</head>
+<body id="online-or-offline" onoffline="offFunction ()">
+ <h1 id="header-title">Adding a YouTube Video</h1>
+<p id="demo"></p>
+<iframe width= "400" height= "500"= src="https://www.youtube.com/embed/ACGf-yEdUmA" autoplay=1 & mute=1" controls loop></iframe>
+   <script>
+/*function onFunction() {
+    document.getElementById("demo").innerHTML="The browser is working online";
+}*/
+
+function offFunction() {
+    document.getElementById("demo").innerHTML="This browser is working offline";
+}
+
+
+   </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning JavaScript</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <style>
+    body { 
+        background-color: #58c0b4;
+    }
+    #myChart {
+        height: 600px;
+        width: 600px;
+        background-color: #e5f5f2;
+    }
+    </style>
+</head>
+<body>
+  <canvas id="myChart"></canvas>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+<script>
+    let xyValues = [
+    {x:50, y:7},
+    {x:60, y:8},
+    {x:70, y:8},
+    {x:80, y:9},
+    {x:90, y:9},
+    {x:100, y:9},
+    {x:110, y:10},
+    {x:120, y:11},
+    {x:130, y:14},
+    {x:140, y:14},
+    {x:150, y:15}
+  ];
+  
+  new Chart("myChart", {
+    type: "scatter",
+    data: {
+      datasets: [{
+        pointRadius: 4,
+        pointBackgroundColor: "rgb(0,0,255)",
+        data: xyValues
+      }]
+    },
+    options: {
+      legend: {display: false},
+      scales: {
+        xAxes: [{ticks: {min: 40, max:160}}],
+        yAxes: [{ticks: {min: 6, max:16}}],
+      }
+    }
+  });
+</script>
+</body>
+</html>

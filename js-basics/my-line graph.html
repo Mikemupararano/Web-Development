@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.3.0/dist/chart.umd.min.js"></script>
+    <title>Using Chart JS to plot a line graph</title>
+    <style>
+        * {
+            margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+        #myChart {
+            display: flex;
+            position: relative;
+            left: 0%;
+                background-color: white;
+            border: 1px solid red;
+            height: 200px;
+            width: 200px;
+            
+            
+          }
+          h1 {
+            background-color: #008000;
+            text-align: center;
+            font-size: 50px;
+            color: white;
+            padding: 10px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            border-radius: 40px;
+            margin-bottom:
+                      }
+          body {
+            width: 500px;
+            margin: auto;
+            margin-top: 50px;
+            background: #26C6DA;
+          }
+    </style>
+</head>
+<body>
+    <h1>Using Chart JS to draw line graphs</h1>
+    <canvas id="myChart" height="250" width="200"></canvas> 
+   <script>
+//const xValues=[1,2,3,4,5,6,7,8,9,10];
+//const yValues=[10,20,30,40,50,60,70,80.90,100];
+const myElement= document.getElementById("myChart");
+const config = {
+    type: "line",
+    data: { 
+        labels:[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+         datasets: [{
+            label: "Chart",
+             data:[0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100],
+               backgroundColor: "red" 
+         }]
+         
+         }
+        };
+
+const myChart=new Chart(myElement, config);
+
+   </script> 
+</body>
+</html>

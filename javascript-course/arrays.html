@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Arrays</title>
+    <style>
+/*.search-button-css {
+  background-color: blue;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  padding: 10px;
+  margin: 50px;
+  width: 100px;
+  height: 36px;
+  border: none;
+  border-radius: 18px;*/
+
+}
+.bulb-images-css {
+  height: 400px;
+  width: 400px;
+  margin:50px;
+  background: black;
+  padding-right: 60px;
+  border-radius: 150px;
+}
+    </style>
+</head>
+<body>
+    <h1>
+        JavaScript Arrays
+    </h1>
+    <h2>
+        Bracket Indexing
+    </h2>
+    <p>JavaScript array elements are accesses using numeric indexes (starting from 0).</p>
+
+<p id="demo"></p>
+<button id="search-button-js" class="search-button-css"></button>
+<button type="button" onclick="document.write(15+8)">Try it!</button>
+<button onclick="window.print()">My name is Nyauyanga Mupararano</button>
+<button onclick="document.getElementById('bulb-images-js').src='/images-folder/on-light-bulb-light.gif'" > Click here to turn me off!</button>
+<img id="blub-images-js" class="bulb-images-css" src="/images-folder/on-light-bulb-objects.gif" alt="An image of a bulb">
+<button onclick="document.getElementById('bulb-images-js').src='/images-folder/off-light-bulb-objects.gif'">Click here to turn me on!</button>
+
+<script>
+const fruits=["Banana", "Orange", "Apple", "Mango"];
+document.getElementById('demo').innerHTML=fruits[fruits.length-1];
+let flen=fruits.length;
+console.log(fruits.length);
+for (let i=0; i<flen; i++) {
+console.log(fruits[i]);
+}
+
+let text = "<ul>";
+  fruits.forEach(myFunction);
+  text += "</ul>";
+  
+  document.getElementById("demo").innerHTML = text;
+  
+  function myFunction(value) {
+    text += "<li>" + value + "</li>";
+  } 
+  const myNumbers= [10,20,30,40,56, 87,93];
+  
+console.log(myNumbers);
+myNumbers.forEach(function(myNumber){
+console.log(myNumber);
+})
+//Write()
+//document.getElementById('demo').innerHTML=5+6;
+//document.getElementById('research-button-js').write(5+7);
+//document.getElementById('search-button-js').innerHTML=7+8;
+//window.alert('Mhike');
+
+function bulb_on(){
+  document. getElementById('bulb-images-js'). src='https://tenor.com/blntw.gif';
+  }
+
+  </script>  
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Chart JS</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<style>
+  #myCanvas {
+    display: flex;
+    position: relative;
+    left: 35%;
+    top: 100px;
+    background-color: hwb(137 86% 8%);
+    
+  }
+  h1 {
+    background-color: #008000;
+    text-align: center;
+    font-size: 60px;
+  }
+</style>
+  </head>
+<body>
+  <h1>Using Chart JS to draw linear graphs </h1>
+    <canvas id="myCanvas" width="400" height="300" style="border:1px solid grey"></canvas>
+
+<script>
+const canvas = document.getElementById("myCanvas");
+const ctx = canvas.getContext("2d");
+//canvas.height = canvas.width;
+ctx.transform(1, 0, 0, -1, 0, canvas.height)
+
+const xArray = [50,60,70,80,90,100,110,120,130,140,150];
+const yArray = [7,8,8,9,9,9,10,11,14,14,15];
+
+ctx.fillStyle = "red";
+for (let i = 0; i < xArray.length-1; i++) {
+  let x = xArray[i]*400/150;
+  let y = yArray[i]*400/15;
+  ctx.beginPath();
+  ctx.ellipse(x, y, 3, 3, 0, 0, Math.PI * 2);
+  ctx.fill();
+}
+</script>
+
+</body>
+</html>

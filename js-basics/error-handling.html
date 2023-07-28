@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handling Errors in JavaScript</title>
+</head>
+<body>
+    <style>
+        * {
+            background-color: #dbe3ab;
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+        }
+#header-title {
+    background-color: #6b898e;
+    font-size: 80px;
+    color: bisque;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    margin: none;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+    </style>
+<h1 id="header-title">Handling Errors in JavaScript</h1>
+<p id="demo"></p>
+
+<script>
+   /* try {
+        addlert("Welcome to Nigeria");
+    }
+    catch (err) {
+    document.getElementById("demo").innerHTML= err.message;
+    }
+
+    let x=5;
+    try {
+        x =y+5;
+    }
+    catch (err) {
+        document.getElementById("demo").innerHTML="This error is a  " + err.name + "." + "  The first error message is:  "   + err.message;
+    }*/
+
+    /*try {
+        eval ("alert('Hello)");
+    }
+    catch (err) {
+        document.getElementById("demo").innerHTML=err.name;
+    }*/
+ let x=6;
+try {
+x.toUpperCase();
+}
+catch (err){
+    document.getElementById("demo").innerHTML=err.name;
+}
+</script>
+</body>
+</html>

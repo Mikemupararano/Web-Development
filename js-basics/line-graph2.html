@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using Chart JS to draw line graphs</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.3.0/dist/chart.umd.min.js"></script>
+ <style>
+* {
+    margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+#myChart {
+    display: flex;
+    position: relative;
+    left: 0%;
+        background-color: white;
+    border: 1px solid red;
+    
+    
+  }
+  h1 {
+    background-color: #008000;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 40px;
+    margin-bottom:
+              }
+  body {
+    width: 700px;
+    margin: auto;
+    margin-top: 50px;
+    background: #26C6DA;
+  }
+#bar-chart-btn {
+    background-color: #96be25
+    ;
+    margin: 20px;
+    border: 1px, solid greenyellow;
+    padding: 10px;
+    color: #041014; 
+    border-radius: 5px;
+    font-weight: 600;
+
+}
+#line-graph-btn {
+    background-color:#be2596;
+    margin: 20px;
+    border: 1px, solid #96be25;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    font-weight: 600;
+
+}
+
+</style>
+</head>
+<body>
+    <h1>Drawing line graphs/bar charts</h1>
+    <canvas id="myChart" height="300" width="300"></canvas>
+   
+    <button id="line-graph-btn" onclick="lineFunction()">Line Graph</button>
+    <button id="bar-chart-btn" onclick="barChartFunction()">Bar Chart</button>
+<script>
+   const barChart =document.getElementById("bar-chart-btn");
+   const lineGraph =document.getElementById("line-graph-btn");
+   const chartType= 'bar'
+   function lineFunction(){
+    const myChart =new Chart ("myChart", {
+        type: "line",
+        data: {labels: [1, 2, 3, 4, 5], 
+        datasets: [{label:"Line graph", 
+        data: [80, 100, 120, 140, 160] }] 
+        },
+        options: {
+           animations: {
+            tension: {
+                duration: 1000,
+                easing: 'linear',
+                from: 0,
+                to: 1,
+                loop: true
+            }
+           } 
+           
+        }
+        });
+   };
+function barChartFunction (){
+    const myChart =new Chart ("myChart", {
+        type: "bar",
+        data: {labels: [1, 2, 3, 4, 5], 
+        datasets: [{label:"Line graph", 
+        data: [80, 100, 120, 140, 160],
+    backgroundcolor:"red"
+    }] 
+        },
+        options: {
+           animations: {
+            tension: {
+                duration: 1000,
+                easing: 'linear',
+                from: 0,
+                to: 1,
+                loop: true
+            }
+           } 
+           
+        }
+        });
+   }; 
+   
+    </script>
+</body>
+</html>

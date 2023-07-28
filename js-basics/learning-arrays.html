@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaning JavaScript Arrays</title>
+    <style>
+        . {
+            box-sizing: border-box;
+            margin:0;
+            padding: 0;
+        }
+        .loop-header {
+            background-color: black;
+            color: aqua;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 80px;
+            font-weight: bold;
+            text-align: center;
+            border-radius: 10px;
+            padding: 20px;
+        }
+    </style>
+   
+</head>
+<body>
+    <h1 class="loop-header">Understanding JavaScript Arrays</h1>
+    <p id="demo"></p> 
+   <script>
+    let num1= [1,2,3,4,5,6,7];
+    let num2=num1.map(multiply);
+function multiply (value){
+    return value*2;
+}
+document.getElementById("demo").innerHTML=num2;
+let num3=num1.filter(comp);
+function comp (value){
+    return value>4;
+}
+document.getElementById("demo").innerHTML=num3;
+   </script> 
+</body>
+</html>

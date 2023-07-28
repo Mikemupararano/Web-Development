@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototypes in JavaScript</title>
+    <style>
+        . {
+            box-sizing: border-box;
+            margin:0;
+            padding: 0;
+        }
+        .loop-header {
+            background-color: #45dd46;
+            color: aqua;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 80px;
+            font-weight: bold;
+            text-align: center;
+            border-radius: 10px;
+            padding: 20px;
+        }
+    </style>
+    
+</head>
+<body>
+    <h1 class="loop-header">Understanding Prototypes in JavaScript</h1>
+    <p id="demo"></p>   
+    <script>
+        let abc= {
+            name: "Nyauyanga",
+            surname: "Chipanzzvi",
+            district: "Pfungwe",
+            age: 78
+
+        }
+        console.log(abc);
+                    </script> 
+    <script>
+        function xyz(name, subject, address) {
+this.name=name;
+this.subject=subject;
+this.address=address;
+        }
+    xyz.prototype.getName =function() {
+        return this.name;
+    }
+        let x1= new xyz ("Mike", "Hunting", "Rushinga");
+        let x2= new xyz ("Ndikiye", "Mbira", "Pfungwe")
+        console.log(x1);
+    </script>
+</body>
+</html>

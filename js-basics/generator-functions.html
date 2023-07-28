@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gnerator Functions</title>
+    <style>
+        . {
+            box-sizing: border-box;
+            margin:0;
+            padding: 0;
+        }
+        .loop-header {
+            background-color: orangered;
+            color: aqua;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 80px;
+            font-weight: bold;
+            text-align: center;
+            border-radius: 10px;
+            padding: 20px;
+        }
+    </style>
+    
+</head>
+<body>
+    <h1 class="loop-header">Understanding Gnenerator Functions in JavaScript</h1>
+    <p id="demo"></p>  
+    <script>
+        function* generatorExample() {
+            yield 7;
+            yield 8;
+            yield 9;
+
+        }
+        const generator= generatorExample();
+        console.log(generator.next());
+        console.log(generator.next());
+        console.log(generator.next());
+        console.log(generator.next());
+
+        for (const n of generatorExample()) {
+document.getElementById("demo").innerHTML= n;
+        }
+
+    function* squaredNumberGenerator(){
+        let i=0;
+        while(true) {
+            yield i*i;
+        i++; 
+        }
+        }
+        const squaredNumbers= squaredNumberGenerator();
+        console.log(squaredNumbers.next().value);
+        console.log(squaredNumbers.next().value);
+        console.log(squaredNumbers.next().value);
+        console.log(squaredNumbers.next().value);
+        console.log(squaredNumbers.next().value);
+alert(JSON.stringify(squaredNumbers));
+
+
+    </script>
+</body>
+</html>

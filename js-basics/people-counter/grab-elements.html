@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using JavaScript to grab HTML elements</title>
+</head>
+<body>
+    <h1 id="demo-h1"></h1>
+    <h1 id="header">Modifying HTML Elements</h1>
+    <p id="demo"></p>
+    <p id="modify-element">Welcome to learning JavaScript!</p>
+   <img id="new-image" src="../new-images/bird.gif" alt="Train Station">
+    <script>
+/*const element=document.getElementById("modify-element");
+document.getElementById("demo").innerHTML="Mike," + element.innerHTML;
+const musoro = document.getElementById("header");
+document.getElementById("demo-h1").innerHTML="I am" + " " + musoro.innerHTML;
+console.log(document.URL);
+console.log(document.title);
+console.log(document.script);
+console.log(document.lastModified);
+console.log(document.domain);
+document.getElementById("demo").innerHTML=document.body.innerHTML;*/
+const newHeader =document.getElementById("header");
+newHeader.innerHTML="Madhara is making great progress learning JavaScript!";
+document.getElementById("new-image").src= "../new-images/train-station.jpg";
+document.getElementById("demo").innerHTML="Today's date is" + new Date();
+   </script> 
+</body>
+</html>

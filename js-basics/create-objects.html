@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating JavaScript Objects</title>
+<style>
+    . {
+        box-sizing: border-box;
+        margin:0;
+        padding: 0;
+    }
+    .loop-header {
+        background-color: black;
+        color: aqua;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 80px;
+        font-weight: bold;
+        text-align: center;
+        border-radius: 10px;
+        padding: 20px;
+    }
+</style>
+</head>
+<body>
+    <h1 class="loop-header">Understanding JavaScript Objects</h1>
+    <p id="demo"></p> 
+   <script>
+let student= {
+name:"Mapuno",
+surname: "Nyauyanga",
+age: 98,
+subjects: "Hunting",
+};
+document.getElementById("demo").innerHTML=student.name + " "+ "of surname" + " " + student.surname + " " + "studies" + "  " + student.subjects +".";
+</script>
+<script>
+    let student1=new Object();
+    student1.name="Lancelot";
+    student1.age=87;
+    student1.surname="Nyauyanga";
+    student1.subject="Fishing";
+    document.getElementById("demo").innerHTML=student1.name + " " + "of age" + " " + student1.age + " " + "studied" + " " + student1.subject +"."
+
+
+    function stud (name, age, studies){
+this.name=name;
+this.age=age;
+this.studies=studies;
+}
+const pupil= stud("Peter", 25, "Shona");
+document.getElementById("demo").innerHTML=this.name;
+document.getElementById("demo").innerHTML=this.age;
+</script>
+</body>
+</html>
