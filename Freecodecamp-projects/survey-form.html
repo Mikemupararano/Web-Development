@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lan="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1 id="title">Kasenzi School Survey Form</h1>
+<p id="description">Kasenzi School has been rated excellent by ISI in the 2023 schools inspection. There should be no room for complacency and this survey aims to seek ways of improving the quality of teaching and learning even further at Kasenzi School. It will only take you 5 minutes to complete. Thank you in advance.</p>
+<form id="survey-form" method="post" action='https://register-demo.freecodecamp.org'>
+  <div class="input-element">
+<label for="name" id="name-label">Name: <input id="name" type="text" placeholder="Name" required></label>
+</div>
+<div class="input-element">
+<label for ="email" id="email-label"> Email: <input id="email" type="email" placeholder="Email" required> </label>
+</div>
+<div class="input-element">
+<label id ="number-label">Age: <input id="number" type="number"placeholder="Age"  min="18" max="100" required></label>
+</div>
+<div class="input-element">
+<label>Who is your favourite teacher?</label><br>
+<select id="dropdown"> 
+  <option value="default">Select one teacher</option>
+  <option value="teacher1">Chigunha</option>
+    <option value="teacher2">Chimudzeka</option>
+    <option value="teacher3">Kanyama</option>
+    <option value="teacher4">Karimkwenda</option>
+  </select>
+   </div>
+   <div class="wrapper">
+     <label>What do you look for in a good teacher?</label>
+<div>
+   <input type="radio" id="name-label" name="teacher-specification" value="Name">
+  <label for="name-label">Teaching style</label>
+</div>
+
+<div>
+  <input type="radio" id="handwriting" name="teacher-specification" value="Age">
+  <label for="age">Handwriting</label>
+</div>
+   </div>
+   
+   <div class="checkboxes">
+     <label class="checkbox-label">What other qualities should a good teacher demonstrate?</div>
+     <div>
+    <label><input name="ideas" type="checkbox" value="notes">Clear notes</label>
+    </div>
+    <div>
+    <label><input name="ideas" type="checkbox" value="differentiation">Differentiation</label>
+    </div>
+     <div>
+    <label><input name="ideas" type="checkbox" value="structure">Lesson structure</label>
+    </div>
+     <div>
+    <label><input name="ideas" type="checkbox" value="humour">Good sense of humour</label>
+    </div>
+     <div>
+    <label><input name="ideas" type="checkbox" value="starter">Use of starter</label>
+    </div>
+     <div>
+    <label><input name="ideas" type="checkbox" value="experiments">More experiments</label>
+    </div>
+     <div>
+    <label><input name="ideas" type="checkbox" value="demos">High impact demonstrations</label>
+    </div>
+     <div>
+    <label><input name="ideas" type="checkbox" value="behaviour">Good behaviour management control</label>
+    </div>
+     <div>
+    <label><input name="ideas" type="checkbox" value=pace>Good pace of lesson</label>
+    </div>
+   </div>
+   <div class="textarea">
+     <div>
+    <label>Additional Comments:</label>
+    </div>
+     <textarea class="textspace">
+       
+     </textarea type="text">
+   </div>
+   <div class="submit-button">
+   <button id="submit" type="submit" value="Submit">Submit</button>
+   </div>
+</form>
+</body>
+</html>

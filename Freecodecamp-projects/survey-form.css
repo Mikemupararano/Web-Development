@@ -1,0 +1,82 @@
+* {
+    margin:0;
+    padding:0;
+    box-shadow: border-box;
+  }
+  body {
+    background-color:#dcf08d;
+    color: #2900c5;
+    font-family:Arial;
+    font-size:20px;
+    padding:10px;
+    border: none;
+    padding-left: 30px;
+  }
+  h1 {
+    font-size: 50px;
+    text-align: left;
+    background-color: white;
+    border-radius:5px;
+    padding-top: 5px;
+  }
+  form {
+    border: 2px double red;
+    margin: 10px;
+    padding:15px;
+    padding-top: 5px;
+  }
+  input[type="text"] label, select {
+    height: 36px;
+    width: 64%;
+   
+  
+  }
+  
+  .textspace {
+    padding: 20px;
+    width:80%;
+    margin: 10px;
+    margin-left: 5px;
+    border-radius: 5px;
+    height: 50px;
+  
+  }
+  input[type="checkbox"] {
+   height: 40px;
+   width: 80px;
+  }
+  input[type="radio"] {
+    
+    border: 0px;
+      width: 40px;
+      height: 1.5em;
+  }
+  input[type="text"] {
+    width: 60.5%;
+    height: 40px;
+    
+    }
+  .input-element {
+    padding-left: 20px;
+  }
+  .wrapper {
+   padding-left: 20px;
+  }
+  input[type="email"] {
+    height: 36px;
+    width: 59%;
+    margin: 10px;
+    
+  }
+  input[type="number"] {
+    height: 36px;
+    width: 60%;
+    margin: 10px;
+  
+    }
+    button {
+      height: 36px;
+      width: 60px;
+      text-align: center;
+      margin-bottom:10px;
+    }
